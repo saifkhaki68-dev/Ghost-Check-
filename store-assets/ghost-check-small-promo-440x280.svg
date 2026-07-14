@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="68%">
+      <stop offset="0%" stop-color="#39114d"/>
+      <stop offset="55%" stop-color="#16051f"/>
+      <stop offset="100%" stop-color="#07020d"/>
+    </radialGradient>
+    <linearGradient id="button" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="440" height="280" rx="28" fill="url(#glow)"/>
+  <circle cx="102" cy="135" r="72" fill="#7c3aed" opacity="0.2"/>
+  <circle cx="363" cy="55" r="96" fill="#34d399" opacity="0.08"/>
+
+  <g filter="url(#shadow)">
+    <path d="M104 61c-35 0-58 31-58 71v48c0 9 10 14 17 8l13-11 16 14 17-15 19 15 14-14 12 10c7 6 17 1 17-8v-47c0-40-26-71-67-71z" fill="#ffffff"/>
+    <ellipse cx="83" cy="105" rx="8" ry="12" fill="#21072f"/>
+    <ellipse cx="125" cy="105" rx="8" ry="12" fill="#21072f"/>
+    <circle cx="111" cy="142" r="23" fill="#21072f"/>
+    <circle cx="111" cy="142" r="16" fill="#ffffff" opacity="0.18"/>
+    <path d="M151 169l22 22" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M151 169l22 22" stroke="#21072f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <text x="205" y="94" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800">Ghost Check</text>
+  <text x="205" y="136" fill="#f5eaff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Spot AI-written</text>
+  <text x="205" y="166" fill="#f5eaff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">articles fast</text>
+
+  <rect x="205" y="193" width="176" height="42" rx="21" fill="url(#button)"/>
+  <text x="293" y="221" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800">Check credibility</text>
+</svg>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghost Check</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="aicc-popup">
+    <main>
+      <h1>Ghost Check</h1>
+      <p>Check the current article with multiple AI-likelihood detectors and get credible source suggestions.</p>
+
+      <button id="check-page" type="button">Check this page</button>
+      <button id="subscribe" type="button" class="secondary">Subscribe for $12/year</button>
+
+      <label>
+        API base URL
+        <input id="api-base" type="url" placeholder="http://localhost:4242" />
+      </label>
+
+      <p id="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

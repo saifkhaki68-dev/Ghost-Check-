@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+  <defs>
+    <radialGradient id="background" cx="28%" cy="45%" r="85%">
+      <stop offset="0%" stop-color="#4c1266"/>
+      <stop offset="48%" stop-color="#190724"/>
+      <stop offset="100%" stop-color="#06020b"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="560" fill="url(#background)"/>
+  <circle cx="200" cy="260" r="190" fill="#7c3aed" opacity="0.18"/>
+  <circle cx="1230" cy="98" r="260" fill="#34d399" opacity="0.09"/>
+  <circle cx="1110" cy="525" r="220" fill="#7c3aed" opacity="0.1"/>
+  <path d="M852 72C984 116 1118 116 1252 72" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.08"/>
+  <path d="M835 458C1006 398 1175 398 1345 458" fill="none" stroke="#34d399" stroke-width="3" opacity="0.12"/>
+
+  <g transform="translate(116 97)" filter="url(#softShadow)">
+    <ellipse cx="188" cy="372" rx="140" ry="22" fill="#ffffff" opacity="0.38" filter="url(#glow)"/>
+    <path d="M186 0c-89 0-148 78-148 180v124c0 23 26 36 43 20l34-29 40 36 43-38 49 38 36-36 31 27c18 16 43 3 43-20V181C357 79 291 0 186 0z" fill="#ffffff"/>
+    <ellipse cx="134" cy="110" rx="20" ry="31" fill="#21072f"/>
+    <ellipse cx="241" cy="110" rx="20" ry="31" fill="#21072f"/>
+    <circle cx="207" cy="206" r="58" fill="#21072f"/>
+    <circle cx="207" cy="206" r="40" fill="#ffffff" opacity="0.16"/>
+    <path d="M305 276l60 60" stroke="#ffffff" stroke-width="32" stroke-linecap="round"/>
+    <path d="M305 276l60 60" stroke="#21072f" stroke-width="17" stroke-linecap="round"/>
+    <path d="M191 207l21 21 48-57" fill="none" stroke="#34d399" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(550 142)">
+    <text x="0" y="0" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="900" letter-spacing="-3">Ghost Check</text>
+    <text x="3" y="72" fill="#f5eaff" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">Spot AI-written articles and verify credibility faster.</text>
+
+    <g transform="translate(3 126)">
+      <rect width="282" height="62" rx="31" fill="url(#accent)"/>
+      <text x="141" y="40" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900">Check articles</text>
+    </g>
+
+    <g transform="translate(325 130)">
+      <circle cx="16" cy="16" r="16" fill="#34d399" opacity="0.95"/>
+      <path d="M9 16l5 6 11-13" fill="none" stroke="#06130f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="44" y="25" fill="#d9fff0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">AI signals</text>
+    </g>
+
+    <g transform="translate(520 130)">
+      <circle cx="16" cy="16" r="16" fill="#34d399" opacity="0.95"/>
+      <path d="M9 16l5 6 11-13" fill="none" stroke="#06130f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="44" y="25" fill="#d9fff0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Trusted sources</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "ghost-check",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ghost Check browser extension that flags likely AI-written articles and recommends credible sources.",
+  "scripts": {
+    "dev:server": "node server/src/index.js",
+    "start": "node server/src/index.js",
+    "build:extension": "node scripts/build-extension.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "stripe": "latest"
+  },
+  "devDependencies": {}
+}
