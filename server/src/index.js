@@ -46,6 +46,15 @@ app.get('/health', (request, response) => {
   response.json({ ok: true, freeCheckLimit: config.freeCheckLimit });
 });
 
+app.get('/', (request, response) => {
+  response.type('html').send(`
+    <main style="font-family: system-ui; margin: 3rem auto; max-width: 42rem;">
+      <h1>Ghost Check API</h1>
+      <p>The Ghost Check backend is running.</p>
+    </main>
+  `);
+});
+
 app.post('/api/check', async (request, response) => {
   const { installId, text, title, url } = request.body ?? {};
 

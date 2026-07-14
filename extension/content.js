@@ -156,7 +156,7 @@ async function getInstallId() {
 }
 
 async function getApiBase() {
-  const values = await extensionApi.storage.local.get({ apiBase: 'http://localhost:4242' });
+  const values = await extensionApi.storage.local.get({ apiBase: 'https://ghost-check.onrender.com' });
   return values.apiBase.replace(/\/$/, '');
 }
 

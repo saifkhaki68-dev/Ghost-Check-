@@ -8,11 +8,11 @@ const statusText = document.querySelector('#status');
 init();
 
 async function init() {
-  const { apiBase = 'http://localhost:4242' } = await extensionApi.storage.local.get('apiBase');
+  const { apiBase = 'https://ghost-check.onrender.com' } = await extensionApi.storage.local.get('apiBase');
   apiBaseInput.value = apiBase;
 
   apiBaseInput.addEventListener('change', async () => {
-    await extensionApi.storage.local.set({ apiBase: apiBaseInput.value.trim() || 'http://localhost:4242' });
+    await extensionApi.storage.local.set({ apiBase: apiBaseInput.value.trim() || 'https://ghost-check.onrender.com' });
     setStatus('API URL saved.');
   });
 
